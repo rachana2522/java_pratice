@@ -1,0 +1,81 @@
+package com.Arraystring;
+
+import java.util.Arrays;
+
+public class arryopertion {
+	
+	public static class ArrayOperationsExample {
+
+	    public static void main(String[] args) {
+	        // Create an array
+	        int[] numbers = {4, 7, 2, 9, 1, 5, 8, 3, 6};
+
+	        // Print the original array
+	        //System.out.println("Original Array:");
+	        //printArray(numbers);
+
+	        // Find the maximum value in the array
+//	        int max = findMax(numbers);
+//	        System.out.println("\nMaximum Value: " + max);
+
+	        // Find the minimum value in the array
+//	        int min = findMin(numbers);
+//	        System.out.println("Minimum Value: " + min);
+
+	        // Calculate the sum of all elements in the array
+//	        int sum = calculateSum(numbers);
+//	        System.out.println("Sum of All Elements: " + sum);
+
+	        // Sort the array in ascending order
+//	        int[] sortedArray = sortArray(numbers);
+//	        System.out.println("\nSorted Array:");
+//	        printArray(sortedArray);
+//	    }
+
+	    // Method to print an array
+//	    public static void printArray(int[] arr) {
+//	        for (int value : arr) {
+//	            System.out.print(value + " ");
+//	        }
+//	        System.out.println();
+//	    }
+
+	    // Method to find the maximum value in an array
+//	    public static int findMax(int[] arr) {
+//	        int max = arr[0];
+//	        for (int value : arr) {
+//	            if (value > max) {
+//	                max = value;
+//	            }
+//	        }
+//	        return max;
+//	    }
+
+	    // Method to find the minimum value in an array
+//	    public static int findMin(int[] arr) {
+//	        int min = arr[0];
+//	        for (int value : arr) {
+//	            if (value < min) {
+//	                min = value;
+//	            }
+//	        }
+//	        return min;
+//	    }
+
+	    // Method to calculate the sum of all elements in an array
+//	    public static int calculateSum(int[] arr) {
+//	        int sum = 0;
+//	        for (int value : arr) {
+//	            sum += value;
+//	        }
+//	        return sum;
+//	    }
+
+	    // Method to sort an array in ascending order
+	    public static int[] sortArray(int[] arr) {
+	        int[] sortedArray = arr.clone();
+	        Arrays.sort(sortedArray);
+	        return sortedArray;
+	    }
+	}
+}

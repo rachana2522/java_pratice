@@ -1,0 +1,56 @@
+package com.Arraystring;
+
+public class arryopertion {
+	
+	//Array Declaration and Initialization:
+		
+		// Declaration and initialization of an integer array
+		int[] numbers = {1, 2, 3, 4, 5};
+		//Array Access and Modification:
+		
+		// Accessing and modifying an element
+		numbers[2] = 10; // Change the third element to 10
+		int thirdElement = numbers[2]; // Access the third element
+		//Array Insertion:
+		
+		// Inserting an element at a specific index
+//		int[] newArray1 = new int[numbers.length + 1];
+//		int indexToInsert = 2;
+//		int valueToInsert = 7;
+//
+//		for (int i = 0; i < numbers.length; i++) {
+//		    if (i < indexToInsert) {
+//		        newArray1[i] = numbers[i];
+//		    } else {
+//		        newArray1[i+1] = numbers[i];
+//		    }
+//		}
+
+		//newArray[indexToInsert] = valueToInsert;
+		//Array Deletion:
+		
+		// Deleting an element at a specific index
+//		int indexToDelete = 2;
+//
+//		int[] newArray = new int[numbers.length - 1];
+//
+//		for (int i = 0, j = 0; i < numbers.length; i++) {
+//		    if (i != indexToDelete) {
+//		        newArray1[j++] = numbers[i];
+//		    }
+//		}
+		//Array Update:
+	
+		// Updating an element at a specific index
+//		int indexToUpdate = 1;
+//		int newValue = 20;
+
+		//numbers[indexToUpdate] = newValue;
+		//Array Traversal:
+		
+		// Traversing through an array
+//		for (int i = 0; i < numbers.length; i++) {
+//		    System.out.print(numbers[i] + " ");
+//		}
+}
+}

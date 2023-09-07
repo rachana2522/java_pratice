@@ -1,0 +1,27 @@
+//take an array as input from user.serch for a given number x and print the index at which it occurs
+package com.Arraystring;
+
+import java.util.Scanner;
+
+public class array10 {
+	   public static void main(String args[]) {
+	      Scanner sc = new Scanner(System.in);
+	      int size = sc.nextInt();
+	      String numbers[] = new String[size];
+
+
+	      //input
+	      for(int i=0; i<size; i++) {
+	          numbers[i] = sc.next();
+	      }
+	      int x = sc.nextInt();
+	     
+	      //output
+	       for(int i=0; i<size; i++) {
+	           System.out.println(numbers[i]);
+	       }
+	      
+	   }
+	}
+
+

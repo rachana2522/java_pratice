@@ -1,0 +1,25 @@
+package com.Arraystring;
+
+public class StringConcatenation {
+	
+//	String Concatenation by + (String concatenation) operator
+//	Java String concatenation operator (+) is used to add strings. 
+
+	
+	 public static void main(String args[]){  
+		   String s="Sachin"+" Tendulkar";  
+		   System.out.println(s);//Sachin Tendulkar
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+	 }  
+	}  
+
+

@@ -1,0 +1,50 @@
+//create a program for multithreading which will show if both are showing same resourses then it show you 0 resourse
+package com.cozen;
+
+public class fouth {
+
+	
+	    private static int sharedResource = 0;
+
+	    public static void main(String[] args) {
+	        Thread thread1 = new Thread(new Runnable() {
+	            @Override
+	            public void run() {
+	                while (true) {
+	                    synchronized (fouth.class) {
+	                        sharedResource++;
+	                        if (sharedResource > 1) {
+	                            System.out.println("Both threads are accessing the resource! Resource count: " + sharedResource);
+	                            break;
+	                        }
+	                    }
+	                }
+	            }
+	        });
+	        
+	        
+	        
+	      
+	        }
+	        Thread thread2 = new Thread(new Runnable() {
+	            @Override
+	            public void run() {
+	                while (true) {
+	                    synchronized (fouth.class) {
+	                        sharedResource++;
+	                        if (sharedResource > 1) {
+	                            System.out.println("Both threads are accessing the resource! Resource count: " + sharedResource);
+	                            break;
+	                        }
+	                    }
+	                }
+	            }
+	        });
+
+	        thread1.start();
+	        thread2.start();
+	    }
+	}
+
+
+}

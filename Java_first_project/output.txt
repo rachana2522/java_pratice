@@ -1,0 +1,2 @@
+Input string: 2e7
+String contains a vowel.

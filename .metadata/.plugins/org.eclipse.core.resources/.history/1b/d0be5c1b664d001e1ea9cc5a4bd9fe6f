@@ -1,0 +1,64 @@
+package PredefinedFI;
+
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+class Student{
+	String name;
+	int marks;
+	public Student(String name, int marks) {
+		super();
+		this.name = name;
+		this.marks = marks;
+	}	
+}
+
+public class FunctionExec {
+	
+	public static void main(String[] args) {
+		
+		Function<Student,String> f1=s->{
+			int marks=s.marks;
+			String Grade="";
+			if(marks>=80) Grade="A";
+			else if(marks>=60) Grade="B";
+			else if(marks>=50) Grade="C";
+			else if(marks>=35) Grade="D";
+			else Grade="Fail";
+			return Grade;
+		};
+		Predicate<Student> p=s1->s1.marks>=60;
+		
+		Consumer<Student> cos=c1->{
+			System.out.println("Student Name Bro :"+c1.name);
+			System.out.println("Student Marks  Bro:"+c1.marks);
+			System.out.println("Student Grade Bro:"+f1.apply(c1));
+			System.out.println();
+		};
+		Student [] stud= {
+				new Student("Dillip", 90),
+				new Student("Gourish", 75),
+				new Student("Rachana",60),
+				new Student("Rudra",55),
+				new Student("Pallabi", 45),
+				new Student("Sriram", 20),
+				new Student("Ayush",36 ),
+				new Student("Rajesh", 95),
+				new Student("Ranjeet",85 )
+		};
+		for(Student std:stud) {
+			if(p.test(std)) {
+			System.out.println("Student Name :"+std.name);
+			System.out.println("Student Marks :"+std.marks);
+			System.out.println("Student Grade :"+f1.apply(std));
+			System.out.println();
+			}
+		}
+		
+		for(Student s2:stud) {
+			cos.accept(s2);
+		}
+	}
+
+}

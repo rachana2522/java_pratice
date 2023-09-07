@@ -1,0 +1,19 @@
+package com.cozen;
+
+import java.util.*;
+import java.util.List;
+
+public class collection {
+
+	public static <integer> void main(String[] args) {
+		List<integer> list =  new ArrayList<>();
+		list.add(136, null);
+		list.add(236, null);
+		list.add(123, null);
+		list.add(945, null);
+		list.add(234, null);
+		System.out.println(list);
+		
+	}
+
+}

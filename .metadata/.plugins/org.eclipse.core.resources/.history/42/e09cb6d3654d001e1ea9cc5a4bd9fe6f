@@ -1,0 +1,29 @@
+FI
+---------
+Predicate - Boolean : Conditional Execution
+Function<T,R> 
+Consumer  -   Void    : accept
+Supplier
+
+
+2 Argument Predefined FI
+--------------------------
+BiPredicate
+Bifunction
+BiConsumer
+
+Primitive FI
+-------------
+IntPredicate
+Intfunction
+IntConsumer
+
+
+
+Grading System 
+
+marks >80 grade E 
+marks >60 Grade B
+Marks >50 Grade C
+Marks >35 Grade D
+Fail

@@ -1,0 +1,42 @@
+//create a program which will take positive integer input using multithreading technique we have to get  printnumber out of the positiive input and check the input positive or not
+package com.cozen;
+import java.util.Scanner;
+
+   class PositiveNumberChecker implements Runnable {
+		    private int number;
+
+		    public PositiveNumberChecker(int number) {
+		        this.number = number;
+		    }
+    
+		    
+		   public void run() {
+		        if (number > 0) {
+		            System.out.println(number + " is a positive number.");
+		        } else {
+		            System.out.println(number + " is not a positive number.");
+		        }
+		    }
+		}
+
+   public class third {
+		    public static void main(String[] args) {
+		        Scanner scanner = new Scanner(System.in);
+
+		        System.out.print("Enter a positive integer: ");
+		        int inputNumber = scanner.nextInt();
+
+		        if (inputNumber <= 0) {
+		            System.out.println("Invalid input. Please enter a positive integer.");
+		            return;
+		        }
+
+		        Thread positiveCheckerThread = new Thread(new PositiveNumberChecker(inputNumber));
+		        positiveCheckerThread.start();
+		    }
+		
+
+		
+	}
+
+
